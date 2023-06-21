@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/product/add-product" th:object="${data}"   method="post" enctype="multipart/form-data">
+
+
+
+
+    <lable > id  </lable>
+    <input type="text" id="id" name="" th:field=" ${data.id}"><br/>
+
+    <lable > alias </lable>
+    <input type="text" id="alias" name="" th:field=" ${data.alias}"><br/>
+
+    <lable > cost </lable>
+    <input type="text" id="cost" name="" th:field=" ${data.cost}"><br/>
+
+    <lable > created_time </lable>
+    <input type="text" id="created_time" name="" th:field=" ${data.created_time}"><br/>
+
+    <lable > discount_percent </lable>
+    <input type="text" id="discount_percent" name="" th:field=" ${data.discount_percent}"><br/>
+
+    <lable > enabled </lable>
+    <input type="text" id="enabled" name="" th:field=" ${data.enabled}"><br/>
+
+    <lable > full_description </lable>
+    <input type="text" id="full_description" name="" th:field=" ${data.full_description}"><br/>
+
+    <lable > height </lable>
+    <input type="text" id="height" name="" th:field=" ${data.height}"><br/>
+
+    <lable > in_stock </lable>
+    <input type="text" id="in_stock" name="" th:field=" ${data.in_stock}"><br/>
+
+    <lable > length </lable>
+    <input type="text" id="length" name="" th:field=" ${data.length}"><br/>
+
+    <lable > main_image </lable>
+    <input type="file" id="main_image" name="" th:field=" ${data.main_image}"><br/>
+
+    <lable > name </lable>
+    <input type="text" id="name" name="" th:field=" ${data.name}"><br/>
+
+    <lable > price </lable>
+    <input type="text" id="price" name="" th:field=" ${data.price}"><br/>
+
+    <lable > short_description </lable>
+    <input type="text" id="short_description" name="" th:field=" ${data.short_description}"><br/>
+
+    <lable > updated_time </lable>
+    <input type="text" id="updated_time" name="" th:field=" ${data.updated_time}"><br/>
+
+    <lable > weight </lable>
+    <input type="text" id="weight" name="" th:field=" ${data.weight}"><br/>
+
+    <lable > width </lable>
+    <input type="text" id="width" name="" th:field=" ${data.width}"><br/>
+
+    <lable > brand_id </lable>
+    <input type="text" id="brand_id" name="" th:field=" ${data.brand_id}"><br/>
+
+    <lable > category_id </lable>
+    <input type="text" id="category_id" name="" th:field=" ${data.category_id}"><br/>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

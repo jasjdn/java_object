@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>alias: tên đại diện (tên ngắn hiển thị cho người dùng đọc)</th>
+        <th>cost: Chi phí sản xuất</th>
+        <th>created_time: Thời gian tạo</th>
+        <th>discount_percent: Phần trăm giảm giá</th>
+        <th>enabled: Trạng thái kích hoạt</th>
+        <th>full_description: Mô tả đầy đủ</th>
+        <th>height</th>
+        <th>in_stock: Trạng thái còn hàng hay hết hàng</th>
+        <th>length: Chiều dài của sản phẩm</th>
+        <th>main_image</th>
+        <th>name</th>
+        <th>price: Giá bán của sản phẩm</th>
+        <th>short_description:  Mô tả ngắn gọn về sản phẩm</th>
+        <th>updated_time: </th>
+        <th>weight: Trọng lượng của sản phẩm</th>
+        <th>width</th>
+        <th>brand_id:  ID thương hiệu của sản phẩm</th>
+        <th>category_id: ID danh mục của sản phẩm</th>
+    </tr>
+    <tr th:each=" item :${data} ">
+        <td th:text=" ${item.id}"></td>
+        <td th:text=" ${item.alias}"></td>
+        <td th:text=" ${item.cost}"></td>
+        <td th:text=" ${item.created_time}"></td>
+        <td th:text=" ${item.discount_percent}"></td>
+        <td th:text=" ${item.enabled}"></td>
+        <td th:text=" ${item.full_description}"></td>
+        <td th:text=" ${item.height}"></td>
+        <td th:text=" ${item.in_stock}"></td>
+        <td th:text=" ${item.length}"></td>
+        <td> <img th:src="${item.main_image}" style="width: 100px ; aspect-ratio:2/2 " /> </td>
+        <td th:text=" ${item.name}"></td>
+        <td th:text=" ${item.price}"></td>
+        <td th:text=" ${item.short_description}"></td>
+        <td th:text=" ${item.updated_time}"></td>
+        <td th:text=" ${item.weight}"></td>
+        <td th:text=" ${item.width}"></td>
+        <td th:text=" ${item.brand_id}"></td>
+        <td th:text=" ${item.category_id}"></td>
+
+    </tr>
+</table>
+
+<button>
+
+    <a th:href="@{/product/add-product-frm}" > thêm sản phẩm </a>
+</button>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "firebase",
+      "type": "demo.vn.btdemo.storage.finebase.FirebaseImageService$Properties",
+      "sourceType": "demo.vn.btdemo.storage.finebase.FirebaseImageService$Properties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "firebase.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "demo.vn.btdemo.storage.finebase.FirebaseImageService$Properties"
+    },
+    {
+      "name": "firebase.image-url",
+      "type": "java.lang.String",
+      "sourceType": "demo.vn.btdemo.storage.finebase.FirebaseImageService$Properties"
+    }
+  ],
+  "hints": []
+}

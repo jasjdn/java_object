@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="/add_action_user" th:object="${data}"   method="post">
+<!--        <input type="text" id="id" name="id" th:field="${data.ID}" hidden><br>-->
+        <label for="email">email</label><br>
+        <input type="text" id="email" name="email" th:field="${data.EMAIL}"><br>
+        <label for="password">password</label><br>
+        <input type="text" id="password" name="lname" th:field="${data.PASSWORD}"><br><br>
+        <label for="address">address</label><br>
+        <input type="text" id="address" name="lname" th:field="${data.ADDRESS}"><br><br>
+        <label for="cap">cap</label><br>
+        <input type="text" id="cap" name="lname" th:field="${data.STATUS}"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
